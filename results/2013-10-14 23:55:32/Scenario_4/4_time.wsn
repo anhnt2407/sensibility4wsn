@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<topology>
+
+ <configurations>
+   <property name="network_layer" value="LEACH" />
+   <property name="application_layer" value="periodic" />
+   <property name="dependability.application" value="1.0" />
+   <property name="dependability.batteryMin" value="0.0" />
+   <property name="dependability.tinyos" value="1.0" />
+   <property name="mac_layer" value="perfect_mac" />
+   <property name="time_list" value="[ 500.0 , 500.0 , 500.0 , 500.0 , 500.0 , 500.0 , 500.0 , 500.0 , 500.0 , 500.0 ]" />
+   <property name="region_1" value="0.218" />
+   <property name="dependability.batteryMax" value="100" />
+   <property name="time_executed" value="500.0" />
+   <property name="dependability.hardware" value="1.0" />
+   <property name="dependability.link" value="1.0" />
+   <property name="size" value="10" />
+ </configurations>
+
+ <variables>
+ </variables>
+
+ <nodes>
+
+  <node id="1">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.014605 , 0.01932 , 0.014605 , 0.006815 , 0.01112 , 0.010505 , 0.01071 , 0.018705 , 0.014605 , 0.014605 ]" />
+   <property name="battery_level" value="0.00" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 ]" />
+   <property name="id" value="1" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 ]" />
+   <property name="nodeType" value="BS" />
+   <property name="pos.x" value="50" />
+   <property name="pos.y" value="50" />
+   <property name="energy" value="0.013559499999999999" />
+  </node>
+
+  <node id="2">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00935666 , 0.00768591 , 0.00744073 , 0.00952599 , 0.00737021 , 0.00774085 , 0.00924186 , 0.00711191 , 0.00657071 , 0.00615374 ]" />
+   <property name="battery_level" value="21.80" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 49 , 49 , 49 , 49 , 49 , 49 , 49 , 49 , 49 , 49 ]" />
+   <property name="id" value="2" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="0" />
+   <property name="pos.y" value="49" />
+   <property name="energy" value="0.007819857" />
+  </node>
+
+  <node id="3">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00962425 , 0.00257868 , 0.00517796 , 0.00617221 , 0.00321336 , 0.00900162 , 0.00700914 , 0.00292759 , 0.00478805 , 0.00313874 ]" />
+   <property name="battery_level" value="46.37" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 46 , 64 , 26 , 26 , 64 , 14 , 42 , 42 , 58 , 35 ]" />
+   <property name="id" value="3" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 1 , 41 , 78 , 78 , 41 , 73 , 29 , 29 , 8 , 34 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="1" />
+   <property name="pos.y" value="46" />
+   <property name="energy" value="0.0053631600000000005" />
+  </node>
+
+  <node id="4">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00586286 , 0.00301343 , 0.00291961 , 0.00339562 , 0.00492034 , 0.00406474 , 0.00336136 , 0.00225108 , 0.00359932 , 0.00409263 ]" />
+   <property name="battery_level" value="62.52" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 81 , 56 , 32 , 32 , 56 , 38 , 50 , 50 , 65 , 51 ]" />
+   <property name="id" value="4" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 27 , 69 , 33 , 33 , 69 , 28 , 61 , 61 , 62 , 16 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="27" />
+   <property name="pos.y" value="81" />
+   <property name="energy" value="0.003748099" />
+  </node>
+
+  <node id="5">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00858365 , 0.00303179 , 0.00296605 , 0.00745965 , 0.00579314 , 0.00427577 , 0.00868943 , 0.00653652 , 0.00341596 , 0.00631473 ]" />
+   <property name="battery_level" value="42.93" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 42 , 29 , 49 , 49 , 29 , 39 , 47 , 47 , 36 , 32 ]" />
+   <property name="id" value="5" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 4 , 39 , 63 , 63 , 39 , 36 , 3 , 3 , 45 , 4 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="4" />
+   <property name="pos.y" value="42" />
+   <property name="energy" value="0.005706668999999999" />
+  </node>
+
+  <node id="6">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00935994 , 0.00605407 , 0.0071177 , 0.00793893 , 0.00747103 , 0.0047519 , 0.00912979 , 0.00685921 , 0.00416846 , 0.00712364 ]" />
+   <property name="battery_level" value="30.03" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 78 , 93 , 49 , 49 , 93 , 59 , 52 , 52 , 41 , 53 ]" />
+   <property name="id" value="6" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 91 , 33 , 94 , 94 , 33 , 27 , 1 , 1 , 13 , 97 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="91" />
+   <property name="pos.y" value="78" />
+   <property name="energy" value="0.006997467" />
+  </node>
+
+  <node id="7">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00975641 , 0.00540502 , 0.00261334 , 0.00281629 , 0.00539436 , 0.00565194 , 0.00359194 , 0.00238121 , 0.00462838 , 0.00799431 ]" />
+   <property name="battery_level" value="49.77" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 7 , 22 , 46 , 46 , 22 , 39 , 69 , 69 , 35 , 96 ]" />
+   <property name="id" value="7" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 25 , 19 , 37 , 37 , 19 , 88 , 46 , 46 , 79 , 36 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="25" />
+   <property name="pos.y" value="7" />
+   <property name="energy" value="0.0050233199999999995" />
+  </node>
+
+  <node id="8">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00538425 , 0.00351425 , 0.00686101 , 0.00715252 , 0.00372786 , 0.00499166 , 0.00654121 , 0.00536041 , 0.00283573 , 0.00292997 ]" />
+   <property name="battery_level" value="50.70" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 19 , 32 , 56 , 56 , 32 , 57 , 90 , 90 , 24 , 54 ]" />
+   <property name="id" value="8" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 56 , 27 , 93 , 93 , 27 , 80 , 35 , 35 , 42 , 62 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="56" />
+   <property name="pos.y" value="19" />
+   <property name="energy" value="0.004929887" />
+  </node>
+
+  <node id="9">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00466834 , 0.00326377 , 0.00705005 , 0.00753139 , 0.00425269 , 0.0065111 , 0.00616393 , 0.00605159 , 0.00559781 , 0.00602894 ]" />
+   <property name="battery_level" value="42.88" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 83 , 74 , 55 , 55 , 74 , 78 , 69 , 69 , 83 , 20 ]" />
+   <property name="id" value="9" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 39 , 38 , 94 , 94 , 38 , 67 , 88 , 88 , 62 , 63 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="39" />
+   <property name="pos.y" value="83" />
+   <property name="energy" value="0.005711961" />
+  </node>
+
+  <node id="10">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00709349 , 0.00524071 , 0.00633914 , 0.0054683 , 0.0056421 , 0.00522189 , 0.00435573 , 0.00396008 , 0.00272925 , 0.00493855 ]" />
+   <property name="battery_level" value="49.01" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 79 , 28 , 49 , 49 , 28 , 20 , 82 , 82 , 29 , 10 ]" />
+   <property name="id" value="10" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 15 , 84 , 82 , 82 , 84 , 40 , 56 , 56 , 51 , 69 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="15" />
+   <property name="pos.y" value="79" />
+   <property name="energy" value="0.0050989239999999995" />
+  </node>
+
+  <node id="11">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00381646 , 0.00265617 , 0.00426678 , 0.00544266 , 0.00316334 , 0.00411413 , 0.00362295 , 0.00323878 , 0.00488713 , 0.0057413 ]" />
+   <property name="battery_level" value="59.05" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 41 , 62 , 26 , 26 , 62 , 71 , 48 , 48 , 62 , 83 ]" />
+   <property name="id" value="11" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 77 , 38 , 69 , 69 , 38 , 57 , 72 , 72 , 66 , 78 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="77" />
+   <property name="pos.y" value="41" />
+   <property name="energy" value="0.00409497" />
+  </node>
+
+  <node id="12">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00372674 , 0.00504184 , 0.00399272 , 0.00376763 , 0.00755309 , 0.00603314 , 0.00412654 , 0.00428521 , 0.00718895 , 0.00309113 ]" />
+   <property name="battery_level" value="51.19" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 36 , 56 , 49 , 49 , 56 , 71 , 72 , 72 , 46 , 21 ]" />
+   <property name="id" value="12" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 45 , 13 , 21 , 21 , 13 , 82 , 74 , 74 , 96 , 51 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="45" />
+   <property name="pos.y" value="36" />
+   <property name="energy" value="0.004880699" />
+  </node>
+
+  <node id="13">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00606316 , 0.00619624 , 0.00483458 , 0.00539259 , 0.00830569 , 0.00497625 , 0.0071801 , 0.00317686 , 0.00416783 , 0.00571594 ]" />
+   <property name="battery_level" value="43.99" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 33 , 98 , 20 , 20 , 98 , 5 , 75 , 75 , 64 , 37 ]" />
+   <property name="id" value="13" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 92 , 38 , 22 , 22 , 38 , 55 , 37 , 37 , 26 , 96 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="92" />
+   <property name="pos.y" value="33" />
+   <property name="energy" value="0.005600924" />
+  </node>
+
+  <node id="14">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00739585 , 0.00336751 , 0.00355007 , 0.00434752 , 0.00383286 , 0.0034256 , 0.00565274 , 0.00556336 , 0.00661258 , 0.00377036 ]" />
+   <property name="battery_level" value="52.48" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 43 , 31 , 60 , 60 , 31 , 21 , 93 , 93 , 37 , 64 ]" />
+   <property name="id" value="14" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 10 , 29 , 65 , 65 , 29 , 41 , 56 , 56 , 92 , 29 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="10" />
+   <property name="pos.y" value="43" />
+   <property name="energy" value="0.004751844999999999" />
+  </node>
+
+  <node id="15">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.0080519 , 0.00660851 , 0.00579622 , 0.00491841 , 0.0078955 , 0.00784741 , 0.00382367 , 0.00441079 , 0.00436149 , 0.00328715 ]" />
+   <property name="battery_level" value="43.00" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 3 , 95 , 21 , 21 , 95 , 96 , 75 , 75 , 78 , 23 ]" />
+   <property name="id" value="15" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 64 , 32 , 56 , 56 , 32 , 47 , 73 , 73 , 37 , 58 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="64" />
+   <property name="pos.y" value="3" />
+   <property name="energy" value="0.0057001050000000004" />
+  </node>
+
+  <node id="17">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00691205 , 0.00424607 , 0.00793934 , 0.00448345 , 0.00392422 , 0.00659845 , 0.0097569 , 0.00741703 , 0.00556462 , 0.0040449 ]" />
+   <property name="battery_level" value="39.11" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 69 , 24 , 26 , 26 , 24 , 70 , 62 , 62 , 68 , 73 ]" />
+   <property name="id" value="17" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 14 , 50 , 23 , 23 , 50 , 26 , 96 , 96 , 81 , 55 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="14" />
+   <property name="pos.y" value="69" />
+   <property name="energy" value="0.006088702999999999" />
+  </node>
+
+  <node id="16">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00455191 , 0.00675792 , 0.00360722 , 0.00372694 , 0.00781777 , 0.00813084 , 0.00415226 , 0.00647942 , 0.00371789 , 0.0061111 ]" />
+   <property name="battery_level" value="44.95" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 81 , 79 , 54 , 54 , 79 , 91 , 68 , 68 , 20 , 20 ]" />
+   <property name="id" value="16" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 75 , 87 , 27 , 27 , 87 , 25 , 38 , 38 , 34 , 90 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="75" />
+   <property name="pos.y" value="81" />
+   <property name="energy" value="0.005505327" />
+  </node>
+
+  <node id="19">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00590745 , 0.00592212 , 0.00319506 , 0.00521636 , 0.0055769 , 0.00499767 , 0.00388586 , 0.00270752 , 0.00365236 , 0.00353802 ]" />
+   <property name="battery_level" value="55.40" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 24 , 5 , 39 , 39 , 5 , 69 , 67 , 67 , 21 , 18 ]" />
+   <property name="id" value="19" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 56 , 56 , 65 , 65 , 56 , 30 , 38 , 38 , 30 , 52 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="56" />
+   <property name="pos.y" value="24" />
+   <property name="energy" value="0.004459932" />
+  </node>
+
+  <node id="18">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00437825 , 0.00269932 , 0.00480404 , 0.00506685 , 0.00460541 , 0.00621037 , 0.00323401 , 0.00289658 , 0.00638289 , 0.00607947 ]" />
+   <property name="battery_level" value="53.64" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 75 , 41 , 11 , 11 , 41 , 35 , 56 , 56 , 21 , 9 ]" />
+   <property name="id" value="18" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 80 , 69 , 31 , 31 , 69 , 91 , 69 , 69 , 33 , 39 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="80" />
+   <property name="pos.y" value="75" />
+   <property name="energy" value="0.004635719000000001" />
+  </node>
+
+  <node id="21">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00605537 , 0.00295178 , 0.00506185 , 0.00530867 , 0.00316703 , 0.005941 , 0.0054683 , 0.00484223 , 0.00382948 , 0.00466361 ]" />
+   <property name="battery_level" value="52.71" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 72 , 44 , 28 , 28 , 44 , 83 , 24 , 24 , 30 , 43 ]" />
+   <property name="id" value="21" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 23 , 29 , 14 , 14 , 29 , 65 , 69 , 69 , 21 , 88 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="23" />
+   <property name="pos.y" value="72" />
+   <property name="energy" value="0.004728932000000001" />
+  </node>
+
+  <node id="20">
+   <property name="range" value="200" />
+   <property name="chId" value="1" />
+   <property name="energy_list" value="[ 0.00454162 , 0.00449408 , 0.00342041 , 0.00569222 , 0.004253 , 0.00446374 , 0.00872777 , 0.00654575 , 0.00267785 , 0.00271841 ]" />
+   <property name="battery_level" value="52.47" />
+   <property name="isDead" value="false" />
+   <property name="pos.y_list" value="[ 24 , 14 , 57 , 57 , 14 , 7 , 16 , 16 , 60 , 41 ]" />
+   <property name="id" value="20" />
+   <property name="range_list" value="[ 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 , 200 ]" />
+   <property name="battery" value="0.01" />
+   <property name="pos.x_list" value="[ 65 , 59 , 66 , 66 , 59 , 53 , 22 , 22 , 47 , 60 ]" />
+   <property name="nodeType" value="NODE" />
+   <property name="pos.x" value="65" />
+   <property name="pos.y" value="24" />
+   <property name="energy" value="0.004753485" />
+  </node>
+
+ </nodes>
+
+</topology>

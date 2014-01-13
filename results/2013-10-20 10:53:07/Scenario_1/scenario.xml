@@ -1,0 +1,33 @@
+<scenario>
+ <id>1</id>
+ <nodeNumber>21</nodeNumber>
+ <date>Sun Oct 20 10:53:07 BRT 2013</date>
+ <bsX>100</bsX>
+ <bsY>100</bsY>
+ <width>200</width>
+ <height>200</height>
+ <deploy>
+   <id>1382277187349</id>
+   <name>RANDOM - BS DISTANCE</name>
+   <conf>{}</conf>
+   <var>null</var>
+ </deploy>
+ <app>
+   <id>1382277187349</id>
+   <name>periodic</name>
+   <conf>{}</conf>
+   <var>{app_time=2}</var>
+ </app>
+ <net>
+   <id>1382277187349</id>
+   <name>direct</name>
+   <conf>{}</conf>
+   <var>{net_time=1, net_max_time=5}</var>
+ </net>
+ <mac>
+   <id>1382277187349</id>
+   <name>perfect_mac</name>
+   <conf>{range=200, pos.x=0, nodeType=NODE, pos.y=0}</conf>
+   <var>{battery=0.01, packetSize=100}</var>
+ </mac>
+</scenario>

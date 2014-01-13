@@ -1,0 +1,90 @@
+<sensibility>
+ <nodeNumber>21</nodeNumber>
+ <area>100</area>
+ <bsX>50</bsX>
+ <bsy>50</bsy>
+ <application_layer>
+
+  <configuration>
+     <id>1381777789056</id>
+     <name>periodic</name>
+     <conf>{}</conf>
+     <var>{app_time=2}</var>
+  </configuration>
+
+ </application_layer>
+ <network_layer>
+
+  <configuration>
+     <id>1381777789056</id>
+     <name>gossiping</name>
+     <conf>{}</conf>
+     <var>{net_time=1, net_max_time=1, net_max_hop=5}</var>
+  </configuration>
+
+  <configuration>
+     <id>1381777789056</id>
+     <name>flooding_probability_based</name>
+     <conf>{}</conf>
+     <var>{net_max_hop=5, net_probability_route=0.001}</var>
+  </configuration>
+
+  <configuration>
+     <id>1381777789056</id>
+     <name>dijkstra</name>
+     <conf>{nodeNext=0, bsDistance=99999}</conf>
+     <var>{bs_time=1, node_time=2}</var>
+  </configuration>
+
+  <configuration>
+     <id>1381777789056</id>
+     <name>LEACH</name>
+     <conf>{chId=0}</conf>
+     <var>{leach_cluster_no=4, leach_setup_time=80, leach_aggregation_time=10, leach_round=0, clusterHeadList=[0]}</var>
+  </configuration>
+
+  <configuration>
+     <id>1381777789056</id>
+     <name>direct</name>
+     <conf>{}</conf>
+     <var>{net_time=1, net_max_time=5}</var>
+  </configuration>
+
+ </network_layer>
+ <mac_layer>
+
+  <configuration>
+     <id>1381777789056</id>
+     <name>perfect_mac</name>
+     <conf>{range=200, pos.x=0, nodeType=NODE, pos.y=0}</conf>
+     <var>{battery=0.01, packetSize=45}</var>
+  </configuration>
+
+ </mac_layer>
+ <deploy>
+
+  <configuration>
+     <id>1381777789056</id>
+     <name>RANDOM - BS DISTANCE</name>
+     <conf>{}</conf>
+     <var>null</var>
+  </configuration>
+
+ </deploy>
+ <regions>
+
+  <region>
+    <id>1</id>
+    <x>0</x>
+    <y>49</y>
+    <width>1</width>
+    <height>1</height>
+    <nodes>2; </nodes>
+  </region>
+
+ </regions>
+ <stopCriteriaStorage type="time">
+   <time>10</time>
+   <max>500</max>
+ </stopCriteriaStorage>
+</sensibility>

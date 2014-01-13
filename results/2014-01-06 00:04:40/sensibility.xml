@@ -1,0 +1,80 @@
+<sensibility>
+ <nodeNumber>20</nodeNumber>
+ <area>200</area>
+ <bsX>100</bsX>
+ <bsy>100</bsy>
+ <application_layer>
+
+  <configuration>
+     <id>1388977480208</id>
+     <name>periodic</name>
+     <conf>{}</conf>
+     <var>{app_time=2}</var>
+  </configuration>
+
+ </application_layer>
+ <network_layer>
+
+  <configuration>
+     <id>1388977480208</id>
+     <name>direct</name>
+     <conf>{}</conf>
+     <var>{net_time=1, net_max_time=5}</var>
+  </configuration>
+
+ </network_layer>
+ <mac_layer>
+
+  <configuration>
+     <id>1388977480208</id>
+     <name>perfect_mac</name>
+     <conf>{range=200, pos.x=0, nodeType=NODE, pos.y=0}</conf>
+     <var>{battery=0.001, packetSize=45}</var>
+  </configuration>
+
+ </mac_layer>
+ <deploy>
+
+  <configuration>
+     <id>1388977480208</id>
+     <name>RANDOM - BS DISTANCE</name>
+     <conf>{}</conf>
+     <var>null</var>
+  </configuration>
+
+ </deploy>
+ <regions>
+
+  <region>
+    <id>1</id>
+    <x>50</x>
+    <y>30</y>
+    <width>60</width>
+    <height>60</height>
+    <nodes>2; </nodes>
+  </region>
+
+  <region>
+    <id>2</id>
+    <x>60</x>
+    <y>30</y>
+    <width>70</width>
+    <height>60</height>
+    <nodes>3; </nodes>
+  </region>
+
+  <region>
+    <id>3</id>
+    <x>70</x>
+    <y>30</y>
+    <width>80</width>
+    <height>60</height>
+    <nodes>4; </nodes>
+  </region>
+
+ </regions>
+ <stopCriteriaStorage type="time">
+   <time>10</time>
+   <max>1000</max>
+ </stopCriteriaStorage>
+</sensibility>

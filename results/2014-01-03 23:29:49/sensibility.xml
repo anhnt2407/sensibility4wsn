@@ -1,0 +1,64 @@
+<sensibility>
+ <nodeNumber>20</nodeNumber>
+ <area>200</area>
+ <bsX>100</bsX>
+ <bsy>100</bsy>
+ <application_layer>
+
+  <configuration>
+     <id>1388879523674</id>
+     <name>periodic</name>
+     <conf>{}</conf>
+     <var>{app_time=2}</var>
+  </configuration>
+
+ </application_layer>
+ <network_layer>
+
+  <configuration>
+     <id>1388879523674</id>
+     <name>LEACH</name>
+     <conf>{chId=0}</conf>
+     <var>{leach_cluster_no=4, leach_setup_time=80, leach_aggregation_time=10, leach_round=0, clusterHeadList=[0]}</var>
+  </configuration>
+
+ </network_layer>
+ <mac_layer>
+
+  <configuration>
+     <id>1388879523674</id>
+     <name>perfect_mac</name>
+     <conf>{range=200, pos.x=0, nodeType=NODE, pos.y=0}</conf>
+     <var>{battery=0.001, packetSize=45}</var>
+  </configuration>
+
+ </mac_layer>
+ <deploy>
+
+  <configuration>
+     <id>1388879523674</id>
+     <name>RANDOM - BS DISTANCE</name>
+     <conf>{}</conf>
+     <var>null</var>
+  </configuration>
+
+ </deploy>
+ <regions>
+
+  <region>
+    <id>1</id>
+    <x>1</x>
+    <y>1</y>
+    <width>10</width>
+    <height>10</height>
+    <nodes>2; 3; 4; 5; 6;</nodes>
+  </region>
+
+ </regions>
+ 
+ <stopCriteriaStorage type="time">
+   <time>10</time>
+   <max>100</max>
+ </stopCriteriaStorage>
+ 
+</sensibility>
