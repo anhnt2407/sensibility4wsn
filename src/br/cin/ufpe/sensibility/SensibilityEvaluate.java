@@ -11,6 +11,7 @@ import br.cin.ufpe.sensibility.model.SensibilityOutput;
 import br.cin.ufpe.wsn2cpn.Topology;
 import br.cin.ufpe.wsn2cpn.execute.AccessCpnMultiExecute;
 import br.cin.ufpe.wsn2rbd.Wsn2Rbd;
+import java.io.File;
 import java.util.List;
 import javax.swing.JOptionPane;
 import org.modcs.tools.rbd.blocks.RBDModel;
@@ -56,7 +57,9 @@ public class SensibilityEvaluate implements Runnable
             
             for( Scenario scenario : list )
             {
-                ScenarioFile.save( scenario );
+                String scenarioFilename = getPath( scenario );
+                ScenarioFile.save( scenarioFilename , scenario );
+                
                 evaluateScenario( scenario );
             }
         }
@@ -89,7 +92,7 @@ public class SensibilityEvaluate implements Runnable
         //--------------- avaliar o consumo de energia da rede
         executor.analyseSequencialNodes( topologyCreated );
         executor.traduzir( topologyCreated );
-
+        
         List<Topology> list = executor.executar();
         
         for( int i = 0 ; i < list.size() ; i++ )
@@ -160,6 +163,32 @@ public class SensibilityEvaluate implements Runnable
         {
             return rbd.evaluate( model );
         }
+    }
+    
+    
+    // ------------------------------
+    // ------------------------------ FILE NAME
+    // ------------------------------
+    
+    private String getPath( Scenario scenario )
+    {
+        int id = scenario.getId();
+        
+        String directory = "./results/" + scenario.toGmtString() + "/Scenario_" + id + "/";
+        
+        File directoryFile = new File( directory );
+        
+        if( !directoryFile.exists() )
+        {
+            directoryFile.mkdirs();
+        }
+        
+        return directory;
+    }
+    
+    private String getName( Scenario scenario )
+    {
+        return getPath( scenario ) + "scenario.xml";
     }
     
 }

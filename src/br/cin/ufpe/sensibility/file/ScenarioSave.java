@@ -2,7 +2,6 @@ package br.cin.ufpe.sensibility.file;
 
 import br.cin.ufpe.sensibility.model.ConfigurationLayer;
 import br.cin.ufpe.sensibility.model.Scenario;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -20,9 +19,9 @@ public class ScenarioSave
         this.scenario = scenario;
     }
     
-    public void save() throws IOException
+    public void save( String name ) throws IOException
     {
-        writer = new FileWriter( getName() );
+        writer = new FileWriter( name );
         writer.write( "<scenario>\n" );
         writeTag( "id" , scenario.getId() );
         writeTag( "nodeNumber" , scenario.getNodeNumber() );
@@ -58,28 +57,4 @@ public class ScenarioSave
         writer.write( " </" + tag + ">\n" );
     }
     
-    // ------------------------
-    // ------------------------
-    // ------------------------
-    
-    private String getPath()
-    {
-        int id = scenario.getId();
-        
-        String directory = "./results/" + scenario.toGmtString() + "/Scenario_" + id + "/";
-        
-        File directoryFile = new File( directory );
-        
-        if( !directoryFile.exists() )
-        {
-            directoryFile.mkdirs();
-        }
-        
-        return directory;
-    }
-    
-    private String getName()
-    {
-        return getPath() + "scenario.xml";
-    }
 }

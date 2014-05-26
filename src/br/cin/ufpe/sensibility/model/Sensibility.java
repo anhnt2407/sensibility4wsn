@@ -17,6 +17,7 @@ public class Sensibility
     private int bsX;
     private int bsY;
     private List<Region> regionList;
+    private List<Application> application;
     private List<ConfigurationLayer> applicationLayer;
     private List<ConfigurationLayer> networkLayer;
     private List<ConfigurationLayer> macLayer;
@@ -28,6 +29,7 @@ public class Sensibility
     {
         regionList = new ArrayList<>();
         
+        application = new ArrayList<>();
         applicationLayer = new ArrayList<>();
         networkLayer = new ArrayList<>();
         macLayer = new ArrayList<>();
@@ -142,6 +144,16 @@ public class Sensibility
     public void setDependabilityProperties(Map<String, String> dependabilityProperties)
     {
         this.dependabilityProperties = dependabilityProperties;
+    }
+
+    public List<Application> getApplication()
+    {
+        return application;
+    }
+
+    public void setApplication( List<Application> application )
+    {
+        this.application = application;
     }
 
 }

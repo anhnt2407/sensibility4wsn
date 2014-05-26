@@ -159,8 +159,8 @@ public class ScenarioTopology
         bs.setId( 1 );
         bs.setFixed( true );
         bs.getProperties().put( "nodeType" , "BS" );
-        bs.getProperties().put( "pos.x" , scenario.getBsX() + "" );
-        bs.getProperties().put( "pos.y" , scenario.getBsY() + "" );
+        bs.getProperties().put( "X" , scenario.getBsX() + "" );  // pos.x
+        bs.getProperties().put( "Y" , scenario.getBsY() + "" );  // pos.y
         
         return bs;
     }

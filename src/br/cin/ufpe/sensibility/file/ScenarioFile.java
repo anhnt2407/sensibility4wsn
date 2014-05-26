@@ -5,6 +5,7 @@
 package br.cin.ufpe.sensibility.file;
 
 import br.cin.ufpe.sensibility.model.Scenario;
+import java.io.File;
 
 /**
  *
@@ -13,10 +14,10 @@ import br.cin.ufpe.sensibility.model.Scenario;
 public class ScenarioFile
 {
     
-    public static void save( Scenario scenario ) throws Exception
+    public static void save( String name , Scenario scenario ) throws Exception
     {
         ScenarioSave saver = new ScenarioSave( scenario );
-        saver.save();
+        saver.save( name );
     }
     
     public static Scenario open( String filename ) throws Exception
